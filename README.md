@@ -70,6 +70,8 @@ This step uses Docker Compose to run n8n and its database.
           - DB_POSTGRESDB_PASSWORD=n8npass
           - N8N_HOST=n8n.yourdomain.com
           - N8N_PROTOCOL=http
+          - WEBHOOK_URL=https://n8n.topperkid.com
+          - N8N_EDITOR_BASE_URL=https://n8n.topperkid.com/
         volumes:
           - n8n_data:/home/node/.n8n
       db:
